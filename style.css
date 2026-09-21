@@ -27,13 +27,14 @@ p {
     font-family: "Times New Roman", serif;
 }
 .billedeafmig {
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 170px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
 }
+
 .center {
     display: block;
     margin: 0 auto;
