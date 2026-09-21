@@ -10,51 +10,103 @@ h1 {
     color: steelblue;
 }
 
-h2:hover {
-    color: black;
+h1:hover {
+    color: lightblue;
 }
 
-hr {
-    margin: 20px 0;
+h2 {
+    text-align: center;
+    color: steelblue;
 }
 
 p {
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
     font-size: 16px;
-    font-family: "Times New Roman Time", "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
 }
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 30%;
     border-radius: 10px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px;
-    background-color: lightsteelblue;
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
 }
 
-footer a {
-    text-decoration: none;
-    margin: 0 10px;
+.navbar a {
+    display: block;
     color: steelblue;
+    text-decoration: none;
+    padding: 15px;
 }
 
-footer a:hover {
-    color: red;
+.navbar a:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.video-container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+}
+
+.baligolf {
+    width: 300px !important;
+    height: 170px !important;
+    object-fit: cover;
+}
+
+.rangemp4 {
+    width: 300px !important;
+    height: 170px !important;
+    object-fit: cover;
+}
+
+.my-video {
+    width: 300px;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.family-picture {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-button {
+    display: block;
+    margin: 20px auto;
 }
 
 button {
     background-color: lightblue;
     border-radius: 20px;
     border: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow:
+            0 1px 4px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: pointer;
     padding: 10px 25px;
 }
@@ -62,21 +114,6 @@ button {
 button:active {
     opacity: 0.8;
 }
-
-
-/* =========================
-   PREVIOUS WORK BUTTON
-   ========================= */
-
-.modal-button {
-    display: block;
-    margin: 20px auto;
-}
-
-
-/* =========================
-   POPUP
-   ========================= */
 
 .modal {
     background-color: rgba(0, 0, 255, 0.5);
@@ -117,4 +154,88 @@ button:active {
 .modal-inner p {
     line-height: 24px;
     margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: lightsteelblue;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: steelblue;
+}
+
+footer a:hover {
+    color: red;
+}
+
+@media (max-width: 900px) {
+    .my-video {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .my-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+}
+.family-page .video-container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.family-page .my-video {
+    width: 180px;
+    height: 320px;
+    object-fit: contain;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .family-page .video-container {
+        gap: 20px;
+    }
+
+    .family-page .my-video {
+        width: 160px;
+        height: 285px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .family-page .video-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .family-page .my-video {
+        width: 160px;
+        height: 285px;
+    }
 }

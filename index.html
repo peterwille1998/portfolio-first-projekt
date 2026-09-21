@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>My First Website</title>
 
@@ -18,48 +20,85 @@
 <hr>
 
 <p>
-    I'm 28 years old, and I'm born and raised on Amager. I've lived a couple of years on a small island on the west coast of Jylland called Fanø. <br>
-    I now live in Nørrebro with my girlfriend of two years, and our puppy Vega. In my spare time I enjoy playing video games, watching movies, <br>
-    and staying physically active. I spend quite a lot of time with my family, with whom I also play a lot of golf.
-    I worked as a security officer for 3 years in Copenhagen Airport and saved up for a trip around Asia. My girlfriend and I started our trip in Japan, where we stayed for 3 weeks. <br>
-    Afterwards we flew to the Philippines, then Indonesia, and ended our trip in Thailand. We traveled for 3 months.
+    I'm 28 years old, and I'm born and raised on Amager. I've lived a couple of years on a small island
+    on the west coast of Jylland called Fanø. I now live in Nørrebro with my girlfriend of two years,
+    and our puppy Vega. In my spare time I enjoy playing video games, watching movies, and staying
+    physically active. I spend quite a lot of time with my family, with whom I also play a lot of golf.
+    I worked as a security officer for 3 years in Copenhagen Airport and saved up for a trip around Asia.
+    My girlfriend and I started our trip in Japan, where we stayed for 3 weeks. Afterwards we flew to
+    the Philippines, then Indonesia, and ended our trip in Thailand. We traveled for 3 months.
 </p>
 
-<img src="/images/studiekort%20billede.jpg" alt="Picture of me" height="300" class="center">
+<img src="/images/studiekort%20billede.jpg"
+     alt="Picture of me"
+     height="300"
+     class="center">
 
 <br>
 
 <!-- Button to open popup -->
-<button id="openModal" class="modal-button">Previous Work/Occupation</button>
+<button id="openModal" class="modal-button">
+    Previous Work/Occupation
+</button>
 
 <!-- Popup -->
 <div class="modal" id="modal">
+
     <div class="modal-inner">
+
         <h3>Previous Work</h3>
+
         <p>Kitchen Supervisor in Bella Center</p>
         <p>Basic Education/serving in the army</p>
         <p>Security Airport Guard in Copenhagen Airport</p>
-        <p>Disability Assisant/caretaker</p>
-        <p>Roskilde Universitet</p>
+        <p>Disability Assistant/caretaker</p>
+        <p>Roskilde University</p>
+
         <button id="closeModal">LUK</button>
+
     </div>
+
 </div>
+
+<br>
+
+<h2>My Interests</h2>
+
+<!-- Navigation bar -->
+<nav class="navbar">
+
+    <ul>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="family.html">Friends & Family</a></li>
+    </ul>
+
+</nav>
+
+<br>
 
 <p>
     Underneath you can see a video of my puppy having a little accident when we just got her :)
 </p>
 
-<video controls src="videoes/vega.mp4" width="300" class="center">
-</video>
+<div class="video-container">
+
+    <video class="my-video" controls>
+        <source src="videos/vega.mp4" type="video/mp4">
+    </video>
+
+</div>
 
 <footer>
+
     <p>
         Find me via. my socials here:
         <a href="http://facebook.com/peter.wille.39" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/_prwj?igsh=NnVuNjNrdTloazgw&utm_source=qr" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/_prwj?igsh=NnVuNjNrdTloazgw&utm_source=qr"
+           target="_blank">Instagram</a>
     </p>
 
     <p>Email: Peetissweet@gmail.com</p>
+
 </footer>
 
 </body>
